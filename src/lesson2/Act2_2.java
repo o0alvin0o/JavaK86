@@ -9,8 +9,8 @@ public class Act2_2 {
 
         System.out.print("Input number: ");
         int number = input.nextInt();
-        int number2 = number * 10 + number;
-        int number3 = number * 100 + number2;
+        int number2 = number * 11;
+        int number3 = number * 111;
         int result = number + number2 + number3;
         System.out.println("Result: " + number + " + " + number + number
                             + " + " + number + number + number + " = " + result
