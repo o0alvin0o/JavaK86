@@ -1,4 +1,4 @@
-package Lesson2;
+package lesson2;
 /*	Activity 2.1: Write a simple program to read two number from the keyboard
 and display the result of some operations on the screen */
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Lesson2;
+package lesson2;
 /*Activity 2.3: Write a Java program that takes a number as input
 and prints its multiplication table up to 10*/
 import java.util.Scanner;
