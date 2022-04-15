@@ -7,12 +7,11 @@ public class Act3_2 {
         int number = input.nextInt();
         
         // count the time must divided by two
-        int quotient = number / 2;
-        int times = 1;
-        for (int i = 0; ; i++) {
-            if (quotient == 0) break;
-            times++;
+        int quotient = number;
+        int times = 0;
+        for (int i = 0;quotient != 0 ; i++) {
             quotient /= 2;
+            times++;
         }
         
         // print the remainder in reverse order
@@ -31,5 +30,34 @@ public class Act3_2 {
                 count++;
             }
         }
+        System.out.println();
+
+        // Another way with array
+        toBinary(number);
+    }
+
+    public static void toBinary(int number) {
+
+        int quotient = number;
+        int times = 0;
+        for (int i = 0;quotient != 0 ; i++) {
+            quotient /= 2;
+            times++;
+        }
+
+        int[] binaryInReverseOrder = new int[times];
+        quotient = number;
+        for (int i = 0; i < binaryInReverseOrder.length; i++) {
+            binaryInReverseOrder[i] = quotient % 2;
+            quotient /= 2;
+        }
+
+        // print the result
+        System.out.print("Binary value is(solved by array): ");
+        for (int i = binaryInReverseOrder.length - 1; i >= 0; i--) {
+            System.out.print(binaryInReverseOrder[i]);
+        }
+
+
     }
 }
