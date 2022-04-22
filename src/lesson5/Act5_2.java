@@ -9,10 +9,10 @@ public class Act5_2 {
         StudentManagement manager = new StudentManagement();
         do {
             System.out.print("Enter name: ");
-            String name = input.next();
+            String name = input.nextLine();
             if (name.equals("OK")) break;
             System.out.print("Enter gpa: ");
-            double gpa = input.nextDouble();
+            double gpa = Double.parseDouble(input.nextLine());
             manager.push(new Student(name,gpa));
             System.out.println("======");
         } while (true);
