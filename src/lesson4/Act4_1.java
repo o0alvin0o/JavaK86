@@ -1,11 +1,27 @@
 package lesson4;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Act4_1 {
     public static void main(String[] args) {
-        int[] array1 = {1, 2, 3, 4};
-        int[] array2 = {2, 5, 7, 8};
+        Scanner input = new Scanner(System.in);
+        // Enter array 1
+        System.out.print("Enter first list length: ");
+        int length = Integer.parseInt(input.nextLine());
+        int[] array1 = new int[length];
+        System.out.print("Enter list: ");
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = input.nextInt();
+        }
+        // Enter array 2
+        System.out.print("Enter second list length: ");
+        length = Integer.parseInt(input.nextLine());
+        int[] array2 = new int[length];
+        System.out.print("Enter list: ");
+        for (int i = 0; i < array2.length; i++) {
+            array2[i] = input.nextInt();
+        }
 
         int[] mergeArray = new int[array1.length + array2.length];
 
