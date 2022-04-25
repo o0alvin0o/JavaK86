@@ -8,7 +8,7 @@ public class Act4_1 {
         Scanner input = new Scanner(System.in);
         // Enter array 1
         System.out.print("Enter first list length: ");
-        int length = Integer.parseInt(input.nextLine());
+        int length = input.nextInt();
         int[] array1 = new int[length];
         System.out.print("Enter list: ");
         for (int i = 0; i < array1.length; i++) {
@@ -16,7 +16,7 @@ public class Act4_1 {
         }
         // Enter array 2
         System.out.print("Enter second list length: ");
-        length = Integer.parseInt(input.nextLine());
+        length = input.nextInt();
         int[] array2 = new int[length];
         System.out.print("Enter list: ");
         for (int i = 0; i < array2.length; i++) {
