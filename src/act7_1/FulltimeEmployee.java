@@ -37,4 +37,6 @@ public class FulltimeEmployee extends Employee {
     public void setDaySalary(long daySalary) {
         this.daySalary = daySalary;
     }
+
+
 }

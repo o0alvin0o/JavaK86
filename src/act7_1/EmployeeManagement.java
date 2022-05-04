@@ -28,7 +28,7 @@ public class EmployeeManagement {
         }
         String result = employees.get(maxIndex).getName() + " has the highest salary with "
                 + maxSalary + " VND/month.";
-        System.out.print(result);
+        System.out.println(result);
     }
 
     public void lowestPaidEmployee() {
@@ -42,6 +42,16 @@ public class EmployeeManagement {
         }
         String result = employees.get(minIndex).getName() + " has the lowest salary with "
                 + minSalary + " VND/month.";
-        System.out.print(result);
+        System.out.println(result);
+    }
+
+    public void printAllEmployeeInfor() {
+        for (Employee employee : employees) {
+            System.out.println("Name: " + employee.getName() + ". Age: " + employee.getAge() + " .ID: " + employee.getIdNumber());
+            if ( employee instanceof FulltimeEmployee) System.out.print("Work: Full-time. ");
+            else System.out.print("Work: Part-time. ");
+            System.out.println("salary: " + employee.calculateSalary() + " VND");
+            System.out.println("--------------");
+        }
     }
 }
