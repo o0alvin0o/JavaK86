@@ -21,13 +21,11 @@ public class FulltimeEmployee extends Employee {
     }
 
     public FulltimeEmployee() {
-
+        super();
     }
 
     public FulltimeEmployee(String name, int age, String id) {
-        setAge(age);
-        setName(name);
-        setIdNumber(id);
+        super(name,age,id);
     }
 
     public void setTotalWorkingdays(int totalWorkingdays) {

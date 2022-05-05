@@ -1,9 +1,19 @@
 package act7_1;
 
 public abstract class Employee {
-    private String name;
-    private int age;
-    private String idNumber;
+    protected String name;
+    protected int age;
+    protected String idNumber;
+
+    protected Employee() {
+
+    }
+
+    protected Employee(String name, int age, String idNumber) {
+        this.name = name;
+        this.age = age;
+        this.idNumber = idNumber;
+    }
 
     public String getName() {
         return name;

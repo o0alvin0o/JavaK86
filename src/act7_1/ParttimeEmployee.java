@@ -21,13 +21,11 @@ public class ParttimeEmployee extends Employee {
     }
 
     public ParttimeEmployee() {
-
+        super();
     }
 
     public ParttimeEmployee(String name, int age, String id) {
-        setAge(age);
-        setIdNumber(id);
-        setName(name);
+        super(name, age, id);
     }
 
     public void setTotalWorkingShift(int totalWorkingShift) {
