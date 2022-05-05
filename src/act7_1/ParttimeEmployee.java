@@ -35,4 +35,13 @@ public class ParttimeEmployee extends Employee {
     public void setBaseSalary(long baseSalary) {
         this.baseSalary = baseSalary;
     }
+
+    @Override
+    public String toString() {
+        return "ParttimeEmployee{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", idNumber='" + idNumber + '\'' +
+                '}';
+    }
 }
