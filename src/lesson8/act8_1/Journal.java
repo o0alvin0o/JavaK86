@@ -1,8 +1,8 @@
-package lessson8.act8_1;
+package lesson8.act8_1;
 
-import java.time.LocalDate;
+import java.io.Serializable;
 
-public class Journal extends Document {
+public class Journal extends Document implements Serializable {
     private int issueNumber;
     private int monthIssue;
 

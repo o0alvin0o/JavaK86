@@ -1,6 +1,8 @@
-package lessson8.act8_1;
+package lesson8.act8_1;
 
-public abstract class Document {
+import java.io.Serializable;
+
+public abstract class Document implements Serializable {
     private String id;
     private String publisher;
     private int quantity;

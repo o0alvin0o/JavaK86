@@ -1,14 +1,18 @@
-package lessson8.act8_1;
+package lesson8.act8_1;
 
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDate;
 import java.util.Scanner;
 
 public class AppTest {
     public static void main(String[] args) throws ClassNotFoundException, IOException {
+        FileInputStream fileInput = new FileInputStream("data.ser");
+        DocumentManagement manager1 = null;
+        ObjectInputStream in = new ObjectInputStream(fileInput);
+        manager1 = (DocumentManagement) in.readObject();
+        in.close();
         Scanner input = new Scanner(System.in);
         int command;
-        DocumentManagement manager1 = new DocumentManagement();
         // App running
         do {
             System.out.println(
@@ -57,6 +61,10 @@ public class AppTest {
 
         } while (command != 5);
         System.out.println("Have a good time!");
+        try ( ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("data.ser"))
+        ) {
+            output.writeObject(manager1);
+        }
     }
 
     public static Document gatheringDocumentDetails(int type) {

@@ -1,9 +1,9 @@
-package lessson8.act8_1;
+package lesson8.act8_1;
 
 import java.io.Serializable;
 import java.util.*;
 
-public class DocumentManagement {
+public class DocumentManagement implements Serializable {
 
     public static final int BOOK = 1, JOURNAL = 2, NEWSPAPER = 3;
 

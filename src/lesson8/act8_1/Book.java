@@ -1,6 +1,8 @@
-package lessson8.act8_1;
+package lesson8.act8_1;
 
-public class Book extends Document {
+import java.io.Serializable;
+
+public class Book extends Document implements Serializable {
     private String author;
     private int numberOfPage;
 
