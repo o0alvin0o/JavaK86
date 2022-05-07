@@ -54,5 +54,5 @@ public class DocumentManagement {
         if (listByGenre.isEmpty()) System.out.println("There's no book of this type. Please add more.");
         else listByGenre.forEach(document -> document.printInformation());
     }
-    
+
 }
